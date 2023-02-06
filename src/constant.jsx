@@ -11,7 +11,23 @@ export const PRODUCTS = [
                 opinion: 'opinion'
             }
         ],
-        quantity: 0
+        quantity: 0,
+        category: 'categoty'
+    },
+    {
+        title: 'title',
+        description: 'description',
+        imageSource: '', //link or name in public folder
+        price: '',
+        size: ['size-1', 'size-2'],
+        opinions: [
+            {
+                author: 'author',
+                opinion: 'opinion'
+            }
+        ],
+        quantity: 0,
+        category: 'categoty'
     }
 ] 
 
@@ -23,5 +39,7 @@ export const LANGUAGE = {
     cart: ['Cart', 'Koszyk'],
     search: ['Search', 'Szukaj'],
     wishlist: ['Wishlist', 'Lista życzeń'],
-    
+    help: ['help', 'pomoc'],
+    about: ['about', 'o nas'],
+    contact: ['contact', 'kontakt']
 }
