@@ -4,7 +4,7 @@ const AppContext = React.createContext();
 
 export const AppProvider = ({children}) => {
 
-    const [language, setLanguage] = useState(1); //0 - English  1 - Polish
+    const [language, setLanguage] = useState(0); //0 - English  1 - Polish
 
     const data = {
         language

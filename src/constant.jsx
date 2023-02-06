@@ -22,5 +22,6 @@ export const LANGUAGE = {
     archive: ['Archive', 'Archiwum'],
     cart: ['Cart', 'Koszyk'],
     search: ['Search', 'Szukaj'],
-    wishlist: ['Wishlist', 'Lista życzeń']
+    wishlist: ['Wishlist', 'Lista życzeń'],
+    
 }
