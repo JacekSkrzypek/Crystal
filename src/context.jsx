@@ -22,6 +22,7 @@ export const useGlobalContext = () => {
     if(context === undefined) {
         throw new Error('useContext must be used within a appProvider');
     }
+    return context;
 }
 
 export default {AppContext, AppProvider};
