@@ -7,8 +7,6 @@ import './pages.css'
 const main = () => {
     return (
         <div>
-            <p>Main - test</p>
-
             <SearchEngine />
             <Products />
             <Footer />

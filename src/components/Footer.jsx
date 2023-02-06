@@ -3,9 +3,11 @@ import './modules.css'
 
 const Footer = () => {
     return (
-        <div>
-            
-        </div>
+        <footer className='footer'>
+            <a href="help.html">help</a>
+            <a href="about.html">about</a>
+            <a href="credits.html">credits</a>
+        </footer>
     );
 };
 
