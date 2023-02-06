@@ -1,10 +1,7 @@
 import React from 'react';
 import './modules.css'
-import { useGlobalContext } from '../context';
 
 const Navbar = () => {
-    const { data } = useGlobalContext();
-    const language = data.language;
     return (
         <nav className='navbar'>
             <img className='logo' src="crystalLogo.png"/>
@@ -15,7 +12,7 @@ const Navbar = () => {
                 <a href="archive.html">Archive</a>
                 <a href="cart.html">Cart</a>
                 <a>
-                    <input className='searchInput' type="text" id="searchId" placeholder='Search' minlength="2" maxlength="15"/>
+                    <input className='searchInput' type="text" id="searchId" placeholder='Search' minLength="2" maxLength="15"/>
                 </a>
             <a href="">Wishlist</a>
             </div>
