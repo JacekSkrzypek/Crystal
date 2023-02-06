@@ -1,1 +1,1 @@
-# This is shop app. Shop calls "Crystal"
+# Website for a shop called "Crystal"
