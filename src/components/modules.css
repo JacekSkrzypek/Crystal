@@ -50,13 +50,16 @@ body {
     display: flex;
     align-items: center;
   }
-  .input {
-    
-    font-family: 'Courier New', Courier, monospace;
+  
+  .searchInput {
+    border-radius:10px;
+    font-family: 'Unbounded', cursive;
     text-decoration: none;
     font-size: 15px;
   }
-  
+
+
+
   /* $$$$$ SHOP TOGGLE LIST $$$$$ */
   
   .togglelist {

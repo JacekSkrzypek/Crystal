@@ -6,8 +6,12 @@ export const AppProvider = ({children}) => {
 
     const [language, setLanguage] = useState(0); //0 - English  1 - Polish
 
+    const data = {
+        language
+    }
+    
     return (
-        <AppContext.Provider>
+        <AppContext.Provider value={{data}}>
             {children}
         </AppContext.Provider>
     )
