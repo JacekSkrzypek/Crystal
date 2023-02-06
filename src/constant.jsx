@@ -15,6 +15,12 @@ export const PRODUCTS = [
     }
 ] 
 
-export const LANGUAGE = [
-    
-]
+export const LANGUAGE = {
+    shop: ['Shop', 'Sklep'],
+    seasons: ['Seasons', "Kolekcje"],
+    shops: ['Shops', 'Sklepy'],
+    archive: ['Archive', 'Archiwum'],
+    cart: ['Cart', 'Koszyk'],
+    search: ['Search', 'Szukaj'],
+    wishlist: ['Wishlist', 'Lista życzeń']
+}

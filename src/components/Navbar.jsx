@@ -1,20 +1,23 @@
 import React from 'react';
 import './modules.css'
+import { useGlobalContext } from '../context';
+import { LANGUAGE } from '../constant';
 
 const Navbar = () => {
+    const {data: { language } } = useGlobalContext();
     return (
         <nav className='navbar'>
             <img className='logo' src="crystalLogo.png"/>
             <div className='navCenter'>
-                <a href="index.html">Shop</a>
-                <a href="kolekcje.html">Seasons</a>
-                <a href="shops.html">Stores</a>
-                <a href="archive.html">Archive</a>
-                <a href="cart.html">Cart</a>
+                <a href="index.html"> {LANGUAGE.shop[language]}</a>
+                <a href="kolekcje.html">{LANGUAGE.seasons[language]}</a>
+                <a href="shops.html">{LANGUAGE.shops[language]}</a>
+                <a href="archive.html">{LANGUAGE.archive[language]}</a>
+                <a href="cart.html">{LANGUAGE.cart[language]}</a>
                 <a>
-                    <input className='searchInput' type="text" id="searchId" placeholder='Search' minLength="2" maxLength="15"/>
+                    <input className='searchInput' type="text" id="searchId" placeholder={LANGUAGE.search[language]} minLength="2" maxLength="15"/>
                 </a>
-            <a href="">Wishlist</a>
+            <a href="">{LANGUAGE.wishlist[language]}</a>
             </div>
              
         </nav>
