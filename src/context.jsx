@@ -1,13 +1,16 @@
 import React, {useContext, useState} from "react";
+import { PRODUCTS } from "./constant";
 
 const AppContext = React.createContext();
 
 export const AppProvider = ({children}) => {
 
     const [language, setLanguage] = useState(1); //0 - English  1 - Polish
+    const [products, setProducts] = useState(PRODUCTS);
 
     const data = {
-        language
+        language,
+        products
     }
     
     return (
