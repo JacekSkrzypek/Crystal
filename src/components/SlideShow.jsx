@@ -3,9 +3,9 @@ import "./modules.css";
 
 const SlideShow = () => {
   const images = [
-    "pexels-photo-9558256.jpg",
-    "pexels-photo-9558601.jpg",
-    "pexels-photo-9558791.jpg",
+    "pexels-godisable-jacob-977538.jpg",
+    "pexels-marcelo-chagas-2229490.jpg",
+    "pexels-the-lazy-artist-gallery-1303862.jpg",
   ];
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -20,7 +20,7 @@ const SlideShow = () => {
   useEffect(() => {
     const intervalID = setInterval(() => {
       showSlides();
-    }, 2000);
+    }, 4000); //CZAS ZMIANY SLAJDU
 
     return () => {
       clearInterval(intervalID);
@@ -29,18 +29,18 @@ const SlideShow = () => {
 
   return (
     <div>
-      <p>slideshow</p>
-
-      <h2>Slideshow</h2>
-
       <div className="slideshow-container">
+        <button className="btnLeft">
+            <img className="btnLeft" src="left-arrow.png"></img>
+        </button>
+        <button className="btnRight">
+            <img className="btnRight" src="right-arrow.png"></img>
+        </button>
         <div className="mySlides fade">
-          <div className="numbertext"> {currentImage + 1} / {images.length}</div>
           {images.map((image, id) => {
                 return (
                     <img src={image} 
-                        className={`image ${currentImage === id && 'image--showed'}`} 
-                        style={{ width: "100px" }} />)
+                        className={`image ${currentImage === id && 'image--showed'}`}/> )
                 })}    
         </div>
       </div>
