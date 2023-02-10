@@ -1,14 +1,13 @@
 import React from 'react';
-import Products from '../components/Products';
+import Products from '../components/ProductsList';
 import SearchEngine from '../components/SearchEngine';
 import './pages.css'
 
 const main = () => {
     return (
-        <div>
+        <>
             <SearchEngine />
-            <Products />
-        </div>
+        </>
     );
 };
 

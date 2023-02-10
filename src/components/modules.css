@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
 /* BODY */
+
+
 body {
     background-color: #423f3f;
-    font-family: 'Unbounded', cursive;
     text-decoration: none;
     font-size: 15px;
+    font-family: 'Unbounded', cursive;
   }
   a {
       color: rgb(255, 255, 255);
+
   }
 
   .logo {
@@ -106,7 +109,7 @@ body {
 
   /* Products */
 
-  .products {
+  .products-list {
     margin: 0 auto;
     display: grid;
     width: 1000px;
@@ -116,7 +119,7 @@ body {
     gap: 30px;
   }
 
-  .products .product
+  .products-list .product
   {
     width: 100%;
     display: flex;
@@ -125,8 +128,10 @@ body {
     flex-direction: column;
     padding: 50px 0;
     height: 300px;
+    color: #fff;
   }
-  .products .product .image {
+  .products-list .product .image {
     width: 100%;
     height: 150px;
+    
   }

@@ -2,10 +2,10 @@ import React from 'react';
 import { useGlobalContext } from '../context';
 import './modules.css'
 
-const Products = () => {
+const ProductsList = () => {
     const {data: {products}} = useGlobalContext();
     return (
-        <section className='products'>
+        <section className='products-list'>
             {products.map((product) => {
                 const { title, price } = product;
                 return (
@@ -24,4 +24,4 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default ProductsList;
