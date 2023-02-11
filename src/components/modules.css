@@ -4,7 +4,7 @@
 body {
   background-color: #2b2b2b;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Unbounded", cursive;
   padding-bottom: 40px;
 }
@@ -32,7 +32,7 @@ a {
   justify-content: center;
 }
 .navbar a {
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px 6px 8px;
   color: rgb(255, 255, 255);
   display: inline;
   text-decoration: none;
@@ -48,11 +48,11 @@ a {
 }
 .searchInput {
   background-color: rgb(32, 32, 32);
-  color: #ffffff;
+  color: #cccccc;
   border-radius: 10px;
   font-family: "Unbounded", cursive;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   padding-left: auto;
 }
 
@@ -64,7 +64,7 @@ a {
 
 .footer {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   background-color: rgb(32, 32, 32);
   position: fixed;
@@ -75,13 +75,13 @@ a {
   overflow: hidden;
   padding: 5px;
   gap: 8px;
-  display: flex;
+  display:inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .footer a {
-  padding: 6px 8px 6px 16px;
+  padding: 0;
   color: rgb(255, 255, 255);
   display: inline;
   text-decoration: none;
@@ -92,12 +92,65 @@ a {
   text-decoration: none;
 }
 
-#footer-title {
+h4 {
   font-weight: 400;
+  padding-bottom: 8px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content:center;
+}
+
+.ft-column {
+  padding: 6px 8px 6px 16px;
+  gap: 8px;
+  min-width: 150px;
 }
 
 ul {
   font-weight: 200;
+  list-style-type: none;
+  padding-bottom: 3px;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  width: 300px;
+}
+
+.email-input {
+  background-color: rgb(32, 32, 32);
+  color: #ffffff;
+  border-style:outset;
+  border-radius: 10px;
+  font-family: "Unbounded", cursive;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#accept-btn {
+  background-color: rgb(32, 32, 32);
+  height: 20px;
+  width: 20px;
+  padding-bottom: 3px;
+}
+
+#save-btn {
+  font-size: 14px;
+  font-family: "Unbounded", cursive;
+  background-color:  #cfcfcf;
+  border-color: #cccccc;
+  border-radius: 10px;
+  height: auto;
+  width: 100px;
+  padding: 3px;
 }
 
 /* PRODUCTS */

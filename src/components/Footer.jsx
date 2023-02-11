@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className='footer'>
             <div className='footer-menu'>
-                <div className='help-container'>
+                <div className='help-container ft-column'>
                     <li>
                         <h4 className='footer-title'>{LANGUAGE.help[language]}</h4>
                         <ul><a href="">{LANGUAGE.termsAndConditions[language]}</a></ul>
@@ -17,33 +17,33 @@ const Footer = () => {
                         <ul><a href="">{LANGUAGE.delivery[language]}</a></ul>
                     </li>
                 </div>
-                <div className='about-company'>
+                <div className='about-company ft-column'>
                     <li>
                     <h4 className='footer-title'>{LANGUAGE.company[language]}</h4>
-                        <ul><a href="about.html">{LANGUAGE.about[language]}</a></ul>
+                        <ul><a href="/about">{LANGUAGE.about[language]}</a></ul>
                         <ul><a href="">{LANGUAGE.career[language]}</a></ul>
                     </li>
                 </div>
-                <div className='contact'>
+                <div className='contact ft-column'>
                     <li>
                         <h4 className='footer-title'>{LANGUAGE.contact[language]}</h4>
                         <ul>{LANGUAGE.address[language]}:</ul>
                     </li>
                 </div>
                 
-                <div className='newsletter'>
+                <div className='newsletter ft-column'>
                     <li>
                         <h4>Newsletter</h4>
                         <ul>
                             <p>{LANGUAGE.acceptQuestion[language]}</p>
-                            <input type="email" />
+                            <input type="email" className='email-input' placeholder='example@crystal.com'/>
                             
                         </ul>
                         <ul>
                             <input type="checkbox" id='accept-btn' name='accept'/>
                             <label for="accept">{LANGUAGE.iAccept[language]}</label>
                         </ul>
-                        <ul><button type='submit'>{LANGUAGE.save[language]}</button></ul>
+                        <ul><input id='save-btn' type='submit' value={LANGUAGE.save[language]}/></ul>
                     </li>
                 </div>
             </div>

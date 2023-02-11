@@ -64,7 +64,7 @@ export const PRODUCTS = [
 export const LANGUAGE = {
     shop: ['Shop', 'Sklep'],
     collections: ['Collections', "Kolekcje"],
-    archive: ['Archive', 'Archiwum'],
+    newin: ['New in', 'Nowości'],
     cart: ['Cart', 'Koszyk'],
     search: ['Search', 'Szukaj'],
     wishlist: ['Wishlist', 'Lista życzeń'],
@@ -82,4 +82,5 @@ export const LANGUAGE = {
     sizeGuide:['Size guide', 'Przewodnik po rozmiarach'],
     privacyPolicy:['Privacy policy', 'Polityka prywatności'],
     termsAndConditions:['Terms and conditions', 'Regulamin'],
+    login:['Log in', 'Zaloguj'],
 }

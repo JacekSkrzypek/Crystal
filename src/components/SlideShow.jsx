@@ -3,9 +3,9 @@ import "./modules.css";
 
 const SlideShow = () => {
   const images = [
-    "pexels-godisable-jacob-977538.jpg",
-    "pexels-marcelo-chagas-2229490.jpg",
-    "pexels-the-lazy-artist-gallery-1303862.jpg",
+    "productphotos/pexels-godisable-jacob-977538.jpg",
+    "productphotos/pexels-marcelo-chagas-2229490.jpg",
+    "productphotos/pexels-the-lazy-artist-gallery-1303862.jpg",
   ];
   const [currentImage, setCurrentImage] = useState(0);
 
