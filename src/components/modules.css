@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400&display=swap');
 /* BODY */
 
 body {
@@ -17,7 +17,7 @@ a {
   height: 40px;
 }
 
-/* navbar */
+/* NAVBAR */
 .navbar {
   height: auto;
   width: auto;
@@ -56,12 +56,21 @@ a {
   padding-left: auto;
 }
 
+#sale {
+  color: rgb(255, 70, 70);
+}
+
+/* FOOTER */
+
 .footer {
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffffff;
   background-color: rgb(32, 32, 32);
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 40px;
+  height: auto;
   width: 100%;
   overflow: hidden;
   padding: 5px;
@@ -83,29 +92,15 @@ a {
   text-decoration: none;
 }
 
-/* $$$$$ SHOP TOGGLE LIST $$$$$ */
-
-.togglelist {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  background-color: rgb(255, 255, 255);
-  font-family: "Courier New", Courier, monospace;
-  text-decoration: none;
-  font-size: 15px;
-  margin: 8px;
+#footer-title {
+  font-weight: 400;
 }
 
-.listontent {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #ffffff;
+ul {
+  font-weight: 200;
 }
 
-/* Products */
+/* PRODUCTS */
 
 .products-list {
   margin: 0 auto;
@@ -132,7 +127,7 @@ a {
   height: 150px;
 }
 
-/* Slideshow */
+/* SLIDESHOW */
 
 .slideshow-container {
   width: 100%;
@@ -171,7 +166,14 @@ a {
   }
 }
 
+/* BUTTONS */
+
 button {
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Unbounded", cursive;
+  border: none;
   appearance: none;
   width: 20px;
   height: 30px;

@@ -7,9 +7,49 @@ const Footer = () => {
     const {data: { language } } = useGlobalContext();
     return (
         <footer className='footer'>
-            <a href="help.html">{LANGUAGE.help[language]}</a>
-            <a href="about.html">{LANGUAGE.about[language]}</a>
-            <a href="credits.html">{LANGUAGE.contact[language]}</a>
+            <div className='footer-menu'>
+                <div className='help-container'>
+                    <li>
+                        <h4 className='footer-title'>{LANGUAGE.help[language]}</h4>
+                        <ul><a href="">{LANGUAGE.termsAndConditions[language]}</a></ul>
+                        <ul><a href="">{LANGUAGE.privacyPolicy[language]}</a></ul>
+                        <ul><a href="">{LANGUAGE.sizeGuide[language]}</a></ul>
+                        <ul><a href="">{LANGUAGE.delivery[language]}</a></ul>
+                    </li>
+                </div>
+                <div className='about-company'>
+                    <li>
+                    <h4 className='footer-title'>{LANGUAGE.company[language]}</h4>
+                        <ul><a href="about.html">{LANGUAGE.about[language]}</a></ul>
+                        <ul><a href="">{LANGUAGE.career[language]}</a></ul>
+                    </li>
+                </div>
+                <div className='contact'>
+                    <li>
+                        <h4 className='footer-title'>{LANGUAGE.contact[language]}</h4>
+                        <ul>{LANGUAGE.address[language]}:</ul>
+                    </li>
+                </div>
+                
+                <div className='newsletter'>
+                    <li>
+                        <h4>Newsletter</h4>
+                        <ul>
+                            <p>{LANGUAGE.acceptQuestion[language]}</p>
+                            <input type="email" />
+                            
+                        </ul>
+                        <ul>
+                            <input type="checkbox" id='accept-btn' name='accept'/>
+                            <label for="accept">{LANGUAGE.iAccept[language]}</label>
+                        </ul>
+                        <ul><button type='submit'>{LANGUAGE.save[language]}</button></ul>
+                    </li>
+                </div>
+            </div>
+            <div className='footer-bottom-bar'>
+
+            </div>
         </footer>
     );
 };

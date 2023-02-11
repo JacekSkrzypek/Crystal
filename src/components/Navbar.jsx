@@ -9,7 +9,8 @@ const Navbar = () => {
         <nav className='navbar'>
             <img className='logo' src="crystalLogo.png"/>
             <div className='navCenter'>
-                <a href="index.html"> {LANGUAGE.shop[language]}</a>
+                <a id='sale' href="sale.html">{LANGUAGE.sale[language]}</a>
+                <a href="shop.html">{LANGUAGE.shop[language]}</a>
                 <a href="kolekcje.html">{LANGUAGE.collections[language]}</a>
                 <a href="archive.html">{LANGUAGE.archive[language]}</a>
                 <a href="cart.html">{LANGUAGE.cart[language]}</a>

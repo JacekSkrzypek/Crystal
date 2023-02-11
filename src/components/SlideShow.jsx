@@ -30,12 +30,6 @@ const SlideShow = () => {
   return (
     <div>
       <div className="slideshow-container">
-        <button className="btnLeft">
-            <img className="btnLeft" src="left-arrow.png"></img>
-        </button>
-        <button className="btnRight">
-            <img className="btnRight" src="right-arrow.png"></img>
-        </button>
         <div className="mySlides fade">
           {images.map((image, id) => {
                 return (

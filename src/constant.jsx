@@ -70,5 +70,16 @@ export const LANGUAGE = {
     wishlist: ['Wishlist', 'Lista życzeń'],
     help: ['Help', 'Pomoc'],
     about: ['About', 'O nas'],
-    contact: ['Contact', 'Kontakt']
+    contact: ['Contact', 'Kontakt'],
+    sale: ['Sale', 'Wyprzedaż'],
+    company: ['Company', 'O marce'],
+    acceptQuestion: ['Do you want to be up to date with our offer and current promotions? Subscribe to the newsletter.', 'Chcesz być na bieżąco z naszą ofertą i aktualnymi promocjami? Zapisz się do naszego newslettera.'],
+    iAccept:['I accept the newsletter conditions.', 'Akceptuję warunki newslettera'],
+    save:['Save', 'Zapisz'],
+    career:['Career', 'Praca'],
+    address:['Address', 'Adres'],
+    delivery:['Delivery', 'Dostawa'],
+    sizeGuide:['Size guide', 'Przewodnik po rozmiarach'],
+    privacyPolicy:['Privacy policy', 'Polityka prywatności'],
+    termsAndConditions:['Terms and conditions', 'Regulamin'],
 }
