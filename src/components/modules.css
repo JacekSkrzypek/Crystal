@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400&display=swap');
 /* BODY */
 
 body {
-  background-color: #423f3f;
+  background-color: #2b2b2b;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Unbounded", cursive;
+  padding-bottom: 40px;
 }
 a {
   color: rgb(255, 255, 255);
@@ -16,7 +17,7 @@ a {
   height: 40px;
 }
 
-/* navbar */
+/* NAVBAR */
 .navbar {
   height: auto;
   width: auto;
@@ -31,7 +32,7 @@ a {
   justify-content: center;
 }
 .navbar a {
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px 6px 8px;
   color: rgb(255, 255, 255);
   display: inline;
   text-decoration: none;
@@ -47,15 +48,24 @@ a {
 }
 .searchInput {
   background-color: rgb(32, 32, 32);
-  color: #ffffff;
+  color: #cccccc;
   border-radius: 10px;
   font-family: "Unbounded", cursive;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   padding-left: auto;
 }
 
+#sale {
+  color: rgb(255, 70, 70);
+}
+
+/* FOOTER */
+
 .footer {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
   background-color: rgb(32, 32, 32);
   position: fixed;
   bottom: 0;
@@ -63,16 +73,15 @@ a {
   height: auto;
   width: 100%;
   overflow: hidden;
-  overflow-x: hidden;
   padding: 5px;
   gap: 8px;
-  display: flex;
+  display:inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .footer a {
-  padding: 6px 8px 6px 16px;
+  padding: 0;
   color: rgb(255, 255, 255);
   display: inline;
   text-decoration: none;
@@ -83,29 +92,68 @@ a {
   text-decoration: none;
 }
 
-/* $$$$$ SHOP TOGGLE LIST $$$$$ */
+h4 {
+  font-weight: 400;
+  padding-bottom: 8px;
+}
 
-.togglelist {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  background-color: rgb(255, 255, 255);
-  font-family: "Courier New", Courier, monospace;
+.footer-menu {
+  display: flex;
+  justify-content:center;
+}
+
+.ft-column {
+  padding: 6px 8px 6px 16px;
+  gap: 8px;
+  min-width: 150px;
+}
+
+ul {
+  font-weight: 200;
+  list-style-type: none;
+  padding-bottom: 3px;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  width: 300px;
+}
+
+.email-input {
+  background-color: rgb(32, 32, 32);
+  color: #ffffff;
+  border-style:outset;
+  border-radius: 10px;
+  font-family: "Unbounded", cursive;
   text-decoration: none;
-  font-size: 15px;
-  margin: 8px;
+  font-size: 14px;
 }
 
-.listontent {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #ffffff;
+#accept-btn {
+  background-color: rgb(32, 32, 32);
+  height: 20px;
+  width: 20px;
+  padding-bottom: 3px;
 }
 
-/* Products */
+#save-btn {
+  font-size: 14px;
+  font-family: "Unbounded", cursive;
+  background-color:  #cfcfcf;
+  border-color: #cccccc;
+  border-radius: 10px;
+  height: auto;
+  width: 100px;
+  padding: 3px;
+}
+
+/* PRODUCTS */
 
 .products-list {
   margin: 0 auto;
@@ -132,19 +180,24 @@ a {
   height: 150px;
 }
 
-/* Slideshow */
+/* SLIDESHOW */
+
+.slideshow-container {
+  width: 100%;
+}
 
 .slideshow-container .image {
   display: block;
   opacity: 1;
-  animation: fadeOut 2s ease-in-out forwards;
+  animation: fadeOut 2.5s ease-in-out forwards;
   position: absolute;
+  width: 100%;
 }
 
 .slideshow-container .image--showed {
   display: block;
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -164,4 +217,27 @@ a {
     opacity: 0;
     display: none;
   }
+}
+
+/* BUTTONS */
+
+button {
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Unbounded", cursive;
+  border: none;
+  appearance: none;
+  width: 20px;
+  height: 30px;
+}
+
+img .btnLeft {
+  width: 20px;
+  height: 30px;
+}
+
+img .btnRight {
+  width: 20px;
+  height: 30px;
 }

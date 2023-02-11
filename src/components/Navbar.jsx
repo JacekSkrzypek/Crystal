@@ -2,6 +2,8 @@ import React from 'react';
 import './modules.css'
 import { useGlobalContext } from '../context';
 import { LANGUAGE } from '../constant';
+import { BsBag } from 'react-icons/bs';
+
 
 const Navbar = () => {
     const {data: { language } } = useGlobalContext();
@@ -9,14 +11,18 @@ const Navbar = () => {
         <nav className='navbar'>
             <img className='logo' src="crystalLogo.png"/>
             <div className='navCenter'>
-                <a href="index.html"> {LANGUAGE.shop[language]}</a>
-                <a href="kolekcje.html">{LANGUAGE.collections[language]}</a>
-                <a href="archive.html">{LANGUAGE.archive[language]}</a>
-                <a href="cart.html">{LANGUAGE.cart[language]}</a>
+                <a id='sale' href="/sale">{LANGUAGE.sale[language]}</a>
+                <a href="/newin">{LANGUAGE.newin[language]}</a>
+                <a href="/collections">{LANGUAGE.collections[language]}</a>
                 <a>
                     <input className='searchInput' type="text" id="searchId" placeholder={LANGUAGE.search[language]} minLength="2" maxLength="15"/>
                 </a>
-            <a href="">{LANGUAGE.wishlist[language]}</a>
+                <a href="/login">{LANGUAGE.login[language]}</a>
+                <a href="/cart">
+                    <BsBag/>
+                    {LANGUAGE.cart[language]}
+                </a>
+                <a href="">{LANGUAGE.wishlist[language]}</a>
             </div>
              
         </nav>
