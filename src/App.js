@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/products' element={<Products />} />
+        <Route path='/products2/1' element={<Products />} />
         <Route path='/products/:id' element={<SelectedProduct />} />
       </Routes>
     </Router>

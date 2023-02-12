@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./modules.css";
 
 const SlideShow = () => {
@@ -34,7 +34,7 @@ const SlideShow = () => {
           {images.map((image, id) => {
                 return (
                     <img src={image} 
-                        className={`image ${currentImage === id && 'image--showed'}`}/> )
+                        className={`image ${currentImage === id && 'image--showed'}`} /> )
                 })}    
         </div>
       </div>

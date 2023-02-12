@@ -191,6 +191,11 @@ li {
 
 .slideshow-container .mySlides {
   height: inherit;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+
 }
 
 .slideshow-container .image {
@@ -198,9 +203,9 @@ li {
   opacity: 1;
   animation: fadeOut 2.5s ease-in-out forwards;
   position: absolute;
-  overflow: hidden;
-  height: inherit;
   width: 100%;
+  height: auto;
+
 }
 
 .slideshow-container .image--showed {
@@ -229,17 +234,6 @@ li {
 }
 
 /* BUTTONS */
-
-button {
-  text-decoration: none;
-  font-size: 15px;
-  color: #ffffff;
-  font-family: "Unbounded", cursive;
-  border: none;
-  appearance: none;
-  width: 20px;
-  height: 30px;
-}
 
 img .btnLeft {
   width: 20px;
