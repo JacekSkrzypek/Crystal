@@ -4,7 +4,7 @@ export const PRODUCTS = [
         title: 'White T-shirt',
         color: 'white',
         description: 'Classic white t-shirt',
-        imageSource: '', //link or name in public folder
+        imageSource: 'productPhotos\pexels-photo-9558601.jpg', //link or name in public folder
         price: '39,99',
         size: ['XS', 'S', 'M', 'L', 'XL','XXL'],
         reviews: [

@@ -199,7 +199,7 @@ li {
   animation: fadeOut 2.5s ease-in-out forwards;
   position: absolute;
   overflow: hidden;
-  height: inherit;
+  height: auto;
   width: 100%;
 }
 
