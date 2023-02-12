@@ -1,31 +1,16 @@
 export const PRODUCTS = [
-    {
-        id: 3,
-        title: 'title',
-        description: 'description',
-        imageSource: '', //link or name in public folder
-        price: '',
-        size: ['size-1', 'size-2'],
-        opinions: [
-            {
-                author: 'author',
-                opinion: 'opinion'
-            }
-        ],
-        quantity: 0,
-        category: 'category'
-    },
     {   
         id: 2,
         title: 'White T-shirt',
+        color: 'white',
         description: 'Classic white t-shirt',
         imageSource: '', //link or name in public folder
         price: '39,99',
         size: ['XS', 'S', 'M', 'L', 'XL','XXL'],
-        opinions: [
+        reviews: [
             {
                 author: 'doublekcrystals',
-                opinion: 'I love it!'
+                review: 'I love it!'
             }
         ],
         quantity: 0,
@@ -34,14 +19,15 @@ export const PRODUCTS = [
     {
         id: 1,
         title: 'Red T-shirt',
+        color: 'red',
         description: 'Classic red t-shirt',
         imageSource: '', //link or name in public folder
         price: '40',
         size: ['XS', 'S', 'M', 'L', 'XL','XXL'],
-        opinions: [
+        reviews: [
             {
                 author: 'cathy096',
-                opinion: "It arrived ripped apart, I don't recommend buying from this store"
+                review: "It arrived ripped apart, I don't recommend buying from this store"
             }
         ],
         quantity: 0,
@@ -50,14 +36,15 @@ export const PRODUCTS = [
     {
         id: 0,
         title: 'Corduroy trousers',
+        color: 'white',
         description: 'Casual trousers, plain seam',
         imageSource: '', //link or name in public folder
         price: '59,99',
         size: ['XS', 'S', 'M', 'L', 'XL','XXL'],
-        opinions: [
+        reviews: [
             {
                 author: 'cathy097',
-                opinion: "Nice"
+                review: "Nice"
             }
         ],
         quantity: 0,
@@ -66,12 +53,15 @@ export const PRODUCTS = [
 ] 
 
 export const LANGUAGE = {
+    //NAVBAR
     shop: ['Shop', 'Sklep'],
     collections: ['Collections', "Kolekcje"],
     newin: ['New in', 'Nowości'],
     cart: ['Cart', 'Koszyk'],
     search: ['Search', 'Szukaj'],
     wishlist: ['Wishlist', 'Lista życzeń'],
+    login:['Log in', 'Zaloguj'],
+    //FOOTER
     help: ['Help', 'Pomoc'],
     about: ['About', 'O nas'],
     contact: ['Contact', 'Kontakt'],
@@ -86,5 +76,23 @@ export const LANGUAGE = {
     sizeGuide:['Size guide', 'Przewodnik po rozmiarach'],
     privacyPolicy:['Privacy policy', 'Polityka prywatności'],
     termsAndConditions:['Terms and conditions', 'Regulamin'],
-    login:['Log in', 'Zaloguj'],
+    homepage:['Home', 'Strona główna'],
+    //PRODUCT
+    size:['Size', 'Rozmiar'],
+    color:['Color', 'Kolor'],
+    price:['Price', 'Cena'],
+    sort:['Sort', 'Sortuj'],
+    freedelivery:['Free delivery', 'Darmowa dostawa'],
+    freereturn:['Free return', 'Darmowy zwrot'],
+    details:['See details', 'Szczegóły'],
+    youmight:['You might also like', 'Może ci się także spodobać'],
+    reviews:['Reviews', 'Opinie'],
+    recentlyviewed:['Recently viewed', 'Ostatnio oglądane'],
+    addtocart:['Add to cart', 'Dodaj do koszyka'],
+    //COLORS
+    white:['white', 'biały'],
+    black:['black', 'czarny'],
+    red:['red', 'czerwony'],
+    green:['green', 'zielony'],
+    blue:['blue', 'niebieski'],
 }

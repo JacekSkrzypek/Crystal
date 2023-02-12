@@ -14,7 +14,7 @@ const Navbar = () => {
             <img className='logo' src="crystalLogo.png" onClick={() => navigate('/')}/>
             <div className='navCenter'>
                 <a id='sale' href="/sale">{LANGUAGE.sale[language]}</a>
-                <a href="/newin">{LANGUAGE.newin[language]}</a>
+                <a href="/products">{LANGUAGE.newin[language]}</a>
                 <a href="/collections">{LANGUAGE.collections[language]}</a>
                 <a>
                     <input className='searchInput' type="text" id="searchId" placeholder={LANGUAGE.search[language]} minLength="2" maxLength="15"/>
@@ -30,5 +30,4 @@ const Navbar = () => {
         </nav>
     );
 };
-// wishlist pokazuje sie jako pop-up
 export default Navbar;

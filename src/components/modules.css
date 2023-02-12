@@ -230,17 +230,6 @@ li {
 
 /* BUTTONS */
 
-button {
-  text-decoration: none;
-  font-size: 15px;
-  color: #ffffff;
-  font-family: "Unbounded", cursive;
-  border: none;
-  appearance: none;
-  width: 20px;
-  height: 30px;
-}
-
 img .btnLeft {
   width: 20px;
   height: 30px;
