@@ -1,5 +1,6 @@
 export const PRODUCTS = [
     {
+        id: 3,
         title: 'title',
         description: 'description',
         imageSource: '', //link or name in public folder
@@ -14,7 +15,8 @@ export const PRODUCTS = [
         quantity: 0,
         category: 'category'
     },
-    {
+    {   
+        id: 2,
         title: 'White T-shirt',
         description: 'Classic white t-shirt',
         imageSource: '', //link or name in public folder
@@ -30,6 +32,7 @@ export const PRODUCTS = [
         category: 'Tops'
     },
     {
+        id: 1,
         title: 'Red T-shirt',
         description: 'Classic red t-shirt',
         imageSource: '', //link or name in public folder
@@ -45,6 +48,7 @@ export const PRODUCTS = [
         category: 'Tops'
     },
     {
+        id: 0,
         title: 'Corduroy trousers',
         description: 'Casual trousers, plain seam',
         imageSource: '', //link or name in public folder

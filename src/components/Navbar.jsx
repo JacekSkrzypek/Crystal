@@ -3,13 +3,15 @@ import './modules.css'
 import { useGlobalContext } from '../context';
 import { LANGUAGE } from '../constant';
 import { BsBag } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
+    const navigate = useNavigate();
     const {data: { language } } = useGlobalContext();
     return (
         <nav className='navbar'>
-            <img className='logo' src="crystalLogo.png"/>
+            <img className='logo' src="crystalLogo.png" onClick={() => navigate('/')}/>
             <div className='navCenter'>
                 <a id='sale' href="/sale">{LANGUAGE.sale[language]}</a>
                 <a href="/newin">{LANGUAGE.newin[language]}</a>

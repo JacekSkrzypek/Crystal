@@ -8,15 +8,19 @@ import SelectedProduct from './pages/SelectedProduct';
 
 function App() {
   return (
+    <div className='page-container'>
+    <div className='content-wrap'>
     <Router>
       <Navbar />
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/products' element={<Products />} />
-        <Route path='/selectedProduct' element={<SelectedProduct />} />
+        <Route path='/products/:id' element={<SelectedProduct />} />
       </Routes>
-      <Footer />
     </Router>
+    </div>
+    <Footer />
+    </div>
   );
 }
 
