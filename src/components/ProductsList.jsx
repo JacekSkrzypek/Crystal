@@ -10,7 +10,7 @@ const ProductsList = () => {
                 const { title, price } = product;
                 return (
                 <article className='product'>
-                    <img src="coś.jpg" alt="" onError={({currentTarget}) => {
+                    <img className='image' src="coś.jpg" alt="" onError={({currentTarget}) => {
                         currentTarget.onError = null;
                         currentTarget.src ='https://filestore.community.support.microsoft.com/api/images/ext?url=https%3A%2F%2Fanswerscdn.microsoft.com%2Fstatic%2Fimages%2Fimage-not-found.jpg'
                     }} />
