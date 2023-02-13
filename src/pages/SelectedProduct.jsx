@@ -25,7 +25,7 @@ const SelectedProduct = () => {
             <div id="product-container">
                 <div className="gallery">
                     <div className="main-photo">
-                        <img src={imageSource} width={100} height={50}/>
+                        <img className='image' src={imageSource}/>
                     </div>
                     <div className="thumbnail">
 

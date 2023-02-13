@@ -1,5 +1,22 @@
 export const PRODUCTS = [
     {   
+        id: 3,
+        title: 'White T-shirt',
+        color: 'white',
+        description: 'Classic white t-shirt',
+        imageSource: './productPhotos/pexels-photo-9558601.jpg', //link or name in public folder
+        price: '39,99',
+        size: ['XS', 'S', 'M', 'L', 'XL','XXL'],
+        reviews: [
+            {
+                author: 'doublekcrystals',
+                review: 'I love it!'
+            }
+        ],
+        quantity: 0,
+        category: 'Tops'
+    },
+    {   
         id: 2,
         title: 'White T-shirt',
         color: 'white',

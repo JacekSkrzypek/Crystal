@@ -188,8 +188,8 @@ p {
 
 #product-container {
   width: 100%;
-  display:inline-flex;
-  align-items: center;
+  height: 600px;
+  display:flex;
   justify-content: center;
 }
 
@@ -267,6 +267,14 @@ ul.stars-rating li {
     border-top: 1px solid #cccccc;
     padding: 10px;
     margin: 6px;
+}
+
+.main-photo {
+   height: 100%;
+}
+
+.main-photo .image {
+  height: inherit;
 }
 
 /* /PRODUCTS */

@@ -153,15 +153,22 @@ li {
 
 /* PRODUCTS */
 
-.products-list {
+
+.products-list{
   margin: 0 auto;
-  display: grid;
   width: 100%;
-  height: inherit;
   position: relative;
-  grid-template-columns: repeat(4, 0.25fr);
   padding: 10px; /*adsads*/
+  display: flex;
+  justify-content: center;
+}
+
+.products-container {
+  grid-template-columns: repeat(4, 0.25fr);
+  display: grid;
   gap: 30px;
+  width: 90%;
+
 }
 
 .products-list .product {
