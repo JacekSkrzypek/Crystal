@@ -313,3 +313,88 @@ ul.stars-rating li {
   margin-left: 6px;
   margin-right: 6px;
 }
+
+#sort-filter-btn{
+  width: 100px;
+}
+
+/* LOGIN/REGISTER */
+
+.login-column {
+  margin-top: 50px;
+  display: contents;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+.login-list li{
+  padding-bottom: 10px;
+}
+
+.login-clet {
+  max-width: 200px;
+  width: 80%;
+  height: 80%;
+}
+
+.log-or-reg {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  min-width: 200px;
+  background-color: rgb(32, 32, 32);
+  color: #cccccc;
+  border-radius: 10px;
+  font-family: "Unbounded", cursive;
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: auto;
+  text-align: center;
+}
+
+.form-btn {
+  font-size: 16px;
+  font-family: "Unbounded", cursive;
+  text-decoration: none;
+  color: #ffffff;
+  background-color:  rgb(32, 32, 32);
+  border-width: 0;
+  border-radius: 10px;
+  height: 30px;
+  width: auto;
+  min-width: 100px;
+  padding: 3px;
+  margin-right:5px;
+}
+
+.media-btn {
+  font-size: 16px;
+  font-family: "Unbounded", cursive;
+  text-decoration: none;
+  color: #ffffff;
+  background-color:  rgb(32, 32, 32);
+  border-width: 0;
+  border-radius: 10px;
+  height: 30px;
+  width: auto;
+  min-width: 100px;
+  padding: 3px;
+  margin-right:5px;
+}
+
+.sign-btn {
+  font-size: 14px;
+  font-family: "Unbounded", cursive;
+  background-color:  #cfcfcf;
+  border-color: #cccccc;
+  border-radius: 10px;
+  height: auto;
+  width: 100px;
+  padding: 3px;
+}

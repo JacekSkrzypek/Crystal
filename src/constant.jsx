@@ -76,7 +76,7 @@ export const LANGUAGE = {
     newin: ['New in', 'Nowości'],
     cart: ['Cart', 'Koszyk'],
     search: ['Search', 'Szukaj'],
-    wishlist: ['Wishlist', 'Lista życzeń'],
+    wishlist: ['Wishlist', 'Ulubione'],
     login:['Log in', 'Zaloguj'],
     //FOOTER
     help: ['Help', 'Pomoc'],

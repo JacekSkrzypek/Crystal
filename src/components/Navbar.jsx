@@ -25,7 +25,7 @@ const Navbar = () => {
                     <BsBag/>
                     
                 </a>
-                <a href="" alt='{LANGUAGE.wishlist[language]}'><FaRegHeart/></a>
+                <a href="" alt={LANGUAGE.wishlist[language]}><FaRegHeart/></a>
             </div>
              
         </nav>

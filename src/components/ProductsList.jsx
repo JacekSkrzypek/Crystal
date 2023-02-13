@@ -24,10 +24,39 @@ const ProductsList = () => {
             </div>
             <div className='filter-container'>
                 <ul className='filter-list'>
-                    <li><button className='filter-btn'>{LANGUAGE.sort[language]} <RxTriangleDown/></button></li>
-                    <li><button className='filter-btn'>{LANGUAGE.size[language]} <RxTriangleDown/></button></li>
-                    <li><button className='filter-btn'>{LANGUAGE.color[language]} <RxTriangleDown/></button></li>
-                    <li><button className='filter-btn'>{LANGUAGE.price[language]} <RxTriangleDown/></button></li>
+                    <li>
+                        <select name="sort" className="filter-btn" id='sort-filter-btn'>
+                            <option value="" disabled selected>{LANGUAGE.sort[language]}</option>
+                            <option value="bts">Cena: od najwyższej do najniższej</option>
+                            <option value="stb">Cena: od najniższej do najwyższej</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="size" className="filter-btn" placeholder='Size'>
+                            <option value="" disabled selected>{LANGUAGE.size[language]}</option>
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                            <option value="xxl">XXL</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="colors" className="filter-btn">
+                            <option value="" disabled selected>{LANGUAGE.color[language]}</option>
+                            <option value="white">{LANGUAGE.white[language]}</option>
+                            <option value="black">{LANGUAGE.black[language]}</option>
+                            <option value="black">{LANGUAGE.red[language]}</option>
+                            <option value="black">{LANGUAGE.green[language]}</option>
+                            <option value="black">{LANGUAGE.blue[language]}</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="price" className="filter-btn">
+                            <option value="" disabled selected>{LANGUAGE.price[language]}</option>
+                        </select>
+                    </li>
                 </ul>
             </div>
             <section className='products-list'>
